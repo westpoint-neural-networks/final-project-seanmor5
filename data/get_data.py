@@ -5,7 +5,7 @@ import datetime
 
 crawler = Crawler()
 
-matchups = pd.read_csv('nba_odds_data.csv')
+matchups = pd.read_csv('train/nba_odds_data.csv')
 
 dfs = []
 n = 0
