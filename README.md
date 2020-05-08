@@ -12,13 +12,13 @@ VeGAN is based off of the paper **Unsupervised Anomaly Detection with Generative
 
 At a high-level, the VeGAN model looks like this:
 
-![High Level Model](https://github.com/westpoint-neural-networks/final-project-seanmor5/tree/master/assets/AnomalyDetectionModel.png)
+![High Level Model](assets/AnomalyDetectionModel.png?raw=true)
 
 The generator creates odds from a provided matchup and passes them to the discriminator to determine the probability the odds are real.
 
 The complete VeGAN model looks like this:
 
-![Detailed VeGAN](https://github.com/westpoint-neural-networks/final-project-seanmor5/tree/master/assets/UpsetScoreModel.png)
+![Detailed VeGAN](assets/UpsetScoreModel.png?raw=true)
 
 VeGAN was trained for 10000 Epochs using the RMSProp Optimizer. More exploration on the impact of different hyperparameters and optimizers is required.
 
@@ -56,11 +56,11 @@ Early Results indicate VeGAN is a viable option to detect and bet on upsets. Cur
 
 Below you can see a table of the 95% Confidence Interval of profits of 10 different upset score thresholds over the course of 15 random samples seasons. A season is 5120 matchups. VeGAN ONLY makes bets on potential upsets, so it will only decide on around 2060 matchups:
 
-![Threshold Profits](https://github.com/westpoint-neural-networks/final-project-seanmor5/tree/master/assets/ProfitThresholds.PNG)
+![Threshold Profits](assets/ProfitThresholds.PNG?raw=true)
 
 This table shows the 95% Confidence Interval of profits of various naive methods compared to the best upset score threshold over 15 random samples of seasons:
 
-![Different Method Profits](https://github.com/westpoint-neural-networks/final-project-seanmor5/tree/master/assets/ProfitMethods.png)
+![Different Method Profits](/assets/ProfitMethods.png?raw=true)
 
 The most important result here is that VeGAN significantly outperforms the Random Upset Baseline. Random Upsets filters a season to only include potential upsets and then randomly decides to bet on around 50% of the matchups. The results show that VeGAN performs better than just random guessing---indicating it learns some criteria to select upsets.
 
