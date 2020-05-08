@@ -98,11 +98,18 @@ Code implementations were tweaked from the examples from:
 Research References (used in paper):
 
 [1]	I. Goodfellow et al., “Generative Adversarial Nets,” in Advances in Neural Information Processing Systems 27, Z. Ghahramani, M. Welling, C. Cortes, N. D. Lawrence, and K. Q. Weinberger, Eds. Curran Associates, Inc., 2014, pp. 2672–2680.
+
 [2]	A. Radford, L. Metz, and S. Chintala, “UNSUPERVISED REPRESENTATION LEARNING WITH DEEP CONVOLUTIONAL GENERATIVE ADVERSARIAL NETWORKS,” p. 16, 2016.
+
 [3]	T. Schlegl, P. Seeböck, S. M. Waldstein, U. Schmidt-Erfurth, and G. Langs, “Unsupervised Anomaly Detection with Generative Adversarial Networks to Guide Marker Discovery,” arXiv:1703.05921 [cs], Mar. 2017, Accessed: Apr. 09, 2020. [Online]. Available: http://arxiv.org/abs/1703.05921.
+
 [4]	P. Z. Maymin, “Wage against the machine: A generalized deep-learning market test of dataset value,” International Journal of Forecasting, vol. 35, no. 2, pp. 776–782, Apr. 2019, doi: 10.1016/j.ijforecast.2017.09.008.
+
 [5]	O. Hubáček, G. Šourek, and F. Železný, “Exploiting sports-betting market using machine learning,” International Journal of Forecasting, vol. 35, no. 2, pp. 783–796, Apr. 2019, doi: 10.1016/j.ijforecast.2019.01.001.
+
 [6]	F. Di Mattia, P. Galeone, M. De Simoni, and E. Ghelfi, “A Survey on GANs for Anomaly Detection,” arXiv:1906.11632 [cs, stat], Jun. 2019, Accessed: Apr. 09, 2020. [Online]. Available: http://arxiv.org/abs/1906.11632.
+
 [7]	A. L. Maas, A. Y. Hannun, and A. Y. Ng, “Rectiﬁer Nonlinearities Improve Neural Network Acoustic Models,” p. 6.
+
 [8]	S. Ioffe and C. Szegedy, “Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift,” arXiv:1502.03167 [cs], Mar. 2015, Accessed: Apr. 30, 2020. [Online]. Available: http://arxiv.org/abs/1502.03167.
 
