@@ -57,10 +57,12 @@ Early Results indicate VeGAN is a viable option to detect and bet on upsets. Cur
 Below you can see a table of the 95% Confidence Interval of profits of 10 different upset score thresholds over the course of 15 random samples seasons. A season is 5120 matchups. VeGAN ONLY makes bets on potential upsets, so it will only decide on around 2060 matchups:
 
 ![Threshold Profits](assets/ProfitThresholds.PNG?raw=true)
+**Profits reported in units.**
 
 This table shows the 95% Confidence Interval of profits of various naive methods compared to the best upset score threshold over 15 random samples of seasons:
 
 ![Different Method Profits](/assets/ProfitMethods.png?raw=true)
+**Profits reported in units.**
 
 The most important result here is that VeGAN significantly outperforms the Random Upset Baseline. Random Upsets filters a season to only include potential upsets and then randomly decides to bet on around 50% of the matchups. The results show that VeGAN performs better than just random guessing---indicating it learns some criteria to select upsets.
 
