@@ -24,6 +24,32 @@ VeGAN was trained for 10000 Epochs using the RMSProp Optimizer. More exploration
 
 ## Usage
 
+The easiest way to use VeGAN is with the pre-trained model. If you'd like to reproduce the results, you can use the same data used to train VeGAN located in `data/train`. For clarity, I've included the scripts used to scrape statistics from the NBA website. These scripts are pretty hacky and not nice to work with, so I recommend just using the data provided.
+
+To detect upsets, clone this repository and then import the VeGAN model:
+
+```python
+from vegan import model.vegan.VeGAN
+```
+
+Then load the pretrained weights:
+
+```python
+vegan = VeGAN()
+vegan.load_weights('vegan/model/saved_models/generator.h5', 'vegan/model/saved_models/discriminator.h5')
+```
+
+Then declare the upset detector and run on a game:
+
+```python
+upset_detector = vegan.upset_detector()
+vegan.compute_upset_score(upset_detector, potential_upset, potential_upset_odds, iterations=500)
+```
+
+One of the drawbacks of this approach is that it takes a REALLY long time to run. Note that all of the trials were run with 500 iterations, so you may see different results with different numbers of iterations.
+
+I'm working on a clean interface to get upsets using VeGAN.
+
 ## Current Results
 
 Early Results indicate VeGAN is a viable option to detect and bet on upsets. Currently, the only betting strategy employed was betting off of various "thresholds" for upsets. For example, if VeGAN predicted an upset score of 4.2 and the upset score threshold was 4.0, a flat bet would be placed on that game. Future works will include more advanced betting strategies to maximize profitability.
@@ -59,6 +85,8 @@ Additionally, exploration of different betting strategies is required. Such as:
 Finally, I hope to expand VeGAN to other sports and other types of bets. I also plan to create a friendly web interface for serving VeGAN's predictions.
 
 ## Contributing
+
+If you find any issues with VeGAN you can open an issue or submit a pull request. You can also get in contact with me directly [here](mailto:smoriarity.5@gmail.com).
 
 ## References and Credit
 

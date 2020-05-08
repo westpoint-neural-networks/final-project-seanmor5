@@ -91,7 +91,7 @@ class VeGAN():
     return K.sum(K.abs(y_true - y_pred))
 
   # See Keras AnoGAN: https://github.com/tkwoo/anogan-keras/blob/master/anogan.py
-  def anomaly_detector(self):
+  def upset_detector(self):
     fe = self.feature_extractor()
     fe.trainable = False
     g = Model(inputs=self.G.layers[1].input, outputs=self.G.layers[-1].output)
@@ -113,7 +113,7 @@ class VeGAN():
     return model
 
   # See Keras AnoGAN: https://github.com/tkwoo/anogan-keras/blob/master/anogan.py
-  def compute_anomaly_score(self, model, x, y, iterations=500):
+  def compute_upset_score(self, model, x, y, iterations=500):
       intermediate = self.feature_extractor()
       d_x = intermediate.predict([x, y])
 
@@ -128,11 +128,11 @@ class VeGAN():
       return loss, similar_data
 
   # Helper for running on a season of upsets
-  def compute_anomaly_scores(self, model, x, y, iterations=500):
+  def compute_upset_scores(self, model, x, y, iterations=500):
     upset_scores = []
 
     for line, odd in zip(X_underdogs, underdog_odds):
-      score, _ = vegas.compute_anomaly_score(model, np.array([line]), np.array([odd]))
+      score, _ = vegas.compute_upset_score(model, np.array([line]), np.array([odd]))
       upset_scores.append(score)
 
     return np.array(upset_scores)
