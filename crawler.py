@@ -19,7 +19,7 @@ class Crawler:
 	def make_url(self, stats, season, team, date_from, date_to):
 		date_to = quote(date_to, safe='')
 		date_from = quote(date_from, safe='')
-		url = f'https://stats.nba.com/teams/{stats}/?sort=W_PCT&dir=-1&Season={season}&SeasonType=Regular&DateFrom={date_from}&DateTo={date_to}&TeamID={team}'
+		url = f'https://stats.nba.com/teams/{stats}/?sort=W_PCT&dir=-1&Season={season}&SeasonType=Regular%20Season&DateFrom={date_from}&DateTo={date_to}&TeamID={team}'
 		return url
 
 	def scrape_table(self, stats, season, team, date):
