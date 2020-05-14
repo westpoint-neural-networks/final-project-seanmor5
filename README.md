@@ -70,10 +70,13 @@ The most important result here is that VeGAN significantly outperforms the Rando
 
 ## Future Works
 
+One thing that needs more exploration is how VeGAN compares to a basic regression model. Is it overkill to use a GAN for a regression task? Probably. I'd like to see how using a regression on odds combined with a basic statistical test works.
+
 VeGAN makes bets on basic box score statistics. It has no way of accounting for: injuries, trades, hot streaks, team performance in different stadiums, individual player matchups, etc.
 
 In the future, the following approaches will be applied to VeGAN in hopes of building on the results achieved with basic box score statistics:
 
+* Using Deviation Networks to predict upsets
 * Using CNN with indivdual player statistics
 * Using CNN with a teams quarter-by-quarter statistics
 * Using CNN with windows of games
