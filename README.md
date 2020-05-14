@@ -24,7 +24,9 @@ VeGAN was trained for 10000 Epochs using the RMSProp Optimizer. More exploration
 
 ## Usage
 
-The easiest way to use VeGAN is with the pre-trained model. If you'd like to reproduce the results, you can use the same data used to train VeGAN located in `data/train`. For clarity, I've included the scripts used to scrape statistics from the NBA website. These scripts are pretty hacky and not nice to work with, so I recommend just using the data provided.
+You can use VeGAN by running the notebook: `Betting_Evaluation.ipynb`. To run, you'll need to either comment out the ANN evaluation OR download and load the ANN model in `model/saved_models/binary.zip`.
+
+Another option is to use the pre-trained model. If you'd like to reproduce the results, you can use the same data used to train VeGAN located in `data/train`. For clarity, I've included the scripts used to scrape statistics from the NBA website. These scripts are pretty hacky and not nice to work with, so I recommend just using the data provided.
 
 To detect upsets, clone this repository and then import the VeGAN model:
 
