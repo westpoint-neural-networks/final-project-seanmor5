@@ -6,7 +6,7 @@ VeGAN is a `tf.keras` model based on [AnoGAN](https://arxiv.org/abs/1703.05921).
 
 ## Design
 
-You can read a more in-depth explanation of VeGAN [here](#).
+You can read a more in-depth explanation of VeGAN [here](/assets/VeGAN.pdf).
 
 VeGAN is based off of the paper **Unsupervised Anomaly Detection with Generative Adversarial Networks**. It works by learning a distribution of Vegas Closing Lines on NBA games that resulted in the favorite winning and then predicting upsets based on the differences betweeen the learned distribution and a given sample. VeGAN reports an *upset score* which is a positive real number. Higher upset scores indicate higher probabilities of upsets.
 
